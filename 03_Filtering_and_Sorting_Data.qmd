@@ -1,6 +1,6 @@
 ---
 title: "Intro to Data Analysis in R - Sorting and Filtering"
-author: "Aaron Kessler"
+author: "Eva Chillura"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 format:
   html:
@@ -129,7 +129,7 @@ It takes the result and applies something new to it, in sequential order. This b
 ```{r}
 
 flightdata %>% 
-  arrange(dep_delay)
+  arrange(desc(dep_delay))
 
 ```
 
@@ -357,8 +357,7 @@ What would we have to change? How many changes would we have to make. Let's disc
 
 Finally, let's also look at how easy it is to grab economic indicator data from FRED.
 
-A wealth of economic data can be extracted from the Federal Reserve Economic Data (FRED) database. It contains over 10K data sets that are free to use. See the FRED categories to narrow down the data base and to get data codes.
-https://fred.stlouisfed.org/categories
+A wealth of economic data can be extracted from the Federal Reserve Economic Data (FRED) database. It contains over 10K data sets that are free to use. See the FRED categories to narrow down the data base and to get data codes. https://fred.stlouisfed.org/categories
 
 We'll choose one that you've likely crossed paths with in the real world recently: gas prices. *US Regular All Formulations Gas Price (GASREGW), weekly.*
 
